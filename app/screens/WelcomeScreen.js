@@ -10,10 +10,12 @@ import MyAccountScreen from './MyAccountScreen';
 import ListingScreen from './ListingScreen';
 import FormScreen from './FormScreen';
 import CategoryScreen from './CategoryScreen';
+import LoginScreen from './LoginScreen';
 
 export default function welcomeScreen() {
   return (
-    <CategoryScreen />
+    <LoginScreen />
+    //<CategoryScreen />
     //<FormScreen />
     // <ListingScreen />
     // <MyAccountScreen />
