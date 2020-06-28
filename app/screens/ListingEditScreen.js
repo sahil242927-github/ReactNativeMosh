@@ -11,6 +11,7 @@ import {
 
 import Screen from '../components/Screen';
 import AppPicker from '../components/AppPicker';
+import CategoryPickerItem from '../components/CategoryPickerItem';
 
 const validationSchema = Yup.object().shape({
   title: Yup.string().required().min(1).label('title'),
@@ -20,10 +21,35 @@ const validationSchema = Yup.object().shape({
 });
 
 const categories = [
-  { label: 'Furniture', value: 1 },
-  { label: 'Clothing', value: 2 },
-  { label: 'Camera', value: 3 },
-  { label: 'Electronic', value: 4 },
+  { label: 'Furniture', value: 1, backgroundColor: 'green', icon: 'apps' },
+  { label: 'Clothing', value: 2, backgroundColor: 'dodgerblue', icon: 'email' },
+  { label: 'Camera', value: 3, backgroundColor: 'tomato', icon: 'lock' },
+  {
+    label: 'Cars',
+    value: 4,
+    backgroundColor: '#74b9ff',
+    icon: 'directions-car',
+  },
+  { label: 'Games', value: 5, backgroundColor: '#00cec9', icon: 'games' },
+  { label: 'Spa', value: 6, backgroundColor: '#ff7675', icon: 'spa' },
+  {
+    label: 'Electronics & Accessories',
+    value: 7,
+    backgroundColor: '#e84393',
+    icon: 'laptop-chromebook',
+  },
+  {
+    label: 'Alarm',
+    value: 8,
+    backgroundColor: '#6c5ce7',
+    icon: 'access-alarms',
+  },
+  {
+    label: 'Camera',
+    value: 9,
+    backgroundColor: '#fdcb6e',
+    icon: 'photo-camera',
+  },
 ];
 
 const ListingEditScreen = () => {
@@ -45,6 +71,7 @@ const ListingEditScreen = () => {
           maxLength={8}
           name='price'
           placeholder='Price'
+          width={120}
         />
         <FormField
           maxLength={255}
@@ -53,7 +80,14 @@ const ListingEditScreen = () => {
           numberOfLines={3}
           placeholder='Description'
         />
-        <Picker items={categories} name='category' placeholder='Category' />
+        <Picker
+          items={categories}
+          numberOfColumns={3}
+          name='category'
+          placeholder='Category'
+          width='50%'
+          PickerItemComponent={CategoryPickerItem}
+        />
 
         <SubmitButton title='Post' />
       </AppForm>

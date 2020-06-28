@@ -15,7 +15,8 @@ const initialMessages = [
   {
     id: 2,
     title: 'T2',
-    description: 'D2',
+    description:
+      'Lorem Ipsum dahsieed Ipsum Lorem Ipsum dahsieed IpsumLorem Ipsum dahsieed IpsumLorem Ipsum dahsieed IpsumLorem Ipsum dahsieed Ipsum',
     image: require('../assets/office-girl.jpg'),
   },
 ];
@@ -53,7 +54,8 @@ const MessagesScreen = () => {
             {
               id: 2,
               title: 'T2',
-              description: 'D2',
+              description:
+                'Lorem Ipsum dahsieed Ipsum Lorem Ipsum dahsieed IpsumLorem Ipsum dahsieed IpsumLorem Ipsum dahsieed IpsumLorem Ipsum dahsieed Ipsum ',
               image: require('../assets/office-girl.jpg'),
             },
           ]);
