@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput } from 'react-native';
 import Screen from '../components/Screen';
 import colors from '../components/config/colors';
-import AppTextInput from '../components/AppTextInput';
+import AppTextInput from '../components/forms/AppTextInput';
 import AppSwitch from '../components/AppSwitch';
 
 const FormScreen = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
-import colors from '../components/config/colors';
+import colors from './config/colors';
 
 const AppButton = ({ title, onPress, color = 'primary' }) => {
   return (

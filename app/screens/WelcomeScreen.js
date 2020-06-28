@@ -1,7 +1,7 @@
 import React from 'react';
 import { ImageBackground, StyleSheet, View, Image, Text } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
-import AppButton from '../components/Button';
+import AppButton from '../components/AppButton';
 import CardContainer from '../components/CardContainer';
 import ListingDetailsScreen from './ListingDetailsScreen';
 import ViewImageScreen from './ViewImageScreen';
@@ -11,10 +11,12 @@ import ListingScreen from './ListingScreen';
 import FormScreen from './FormScreen';
 import CategoryScreen from './CategoryScreen';
 import LoginScreen from './LoginScreen';
+import ListingEditScreen from './ListingEditScreen';
 
 export default function welcomeScreen() {
   return (
-    <LoginScreen />
+    <ListingEditScreen />
+    //<LoginScreen />
     //<CategoryScreen />
     //<FormScreen />
     // <ListingScreen />
