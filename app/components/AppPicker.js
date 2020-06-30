@@ -24,6 +24,8 @@ const AppPicker = ({
   width = '100%',
 }) => {
   const [modelVisible, setModalVisible] = useState(false);
+
+  console.log(modelVisible);
   return (
     <>
       <TouchableWithoutFeedback onPress={() => setModalVisible(true)}>
@@ -60,8 +62,9 @@ const AppPicker = ({
               <PickerItemComponent
                 item={item}
                 onPress={() => {
-                  setModalVisible(false);
+                  console.log(item);
                   onSelectItem(item);
+                  setModalVisible(false);
                 }}
               />
             )}

@@ -12,11 +12,13 @@ import FormScreen from './FormScreen';
 import CategoryScreen from './CategoryScreen';
 import LoginScreen from './LoginScreen';
 import ListingEditScreen from './ListingEditScreen';
+import AppImagePicker from '../components/AppImagePicker';
 
 export default function welcomeScreen() {
   return (
+    <AppImagePicker />
     //<MessagesScreen />
-    <ListingEditScreen />
+    //<ListingEditScreen />
     //<LoginScreen />
     //<CategoryScreen />
     //<FormScreen />
